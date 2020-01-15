@@ -9,9 +9,12 @@
       { name: 'Brer', year: 2014 },
       { name: 'Darla', year: 2014 },
       { name: 'Noah', year: 2014 },
-      { name: 'Sticker', year: 2010 },
+      { name: 'Sticker', year: 2011 },
       { name: 'Barrel', year: 2012 },
     ];
+
+    const isOld = cats.some(cat => ((new Date()).getFullYear()) - cat.year >= 12);
+    console.log({isOld});
   </script>
 </body>
 </html>
