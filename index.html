@@ -13,8 +13,11 @@
       { name: 'Barrel', year: 2012 },
     ];
 
-    const isOld = cats.some(cat => ((new Date()).getFullYear()) - cat.year >= 12);
+    const isOld = cats.some(cat => ((new Date()).getFullYear()) - cat.year >= 8);
     console.log({isOld});
+
+    const allOld = cats.every(cat => ((new Date()).getFullYear()) - cat.year >= 8);
+    console.log({allOld});
   </script>
 </body>
 </html>
